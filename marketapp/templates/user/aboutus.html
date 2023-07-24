@@ -1,0 +1,55 @@
+{% extends "user/home.html"%}
+{% block morecontent %}
+  <!-- About Us -->
+  <div class="container my-5">
+    <h2 class="text-center mb-5">About Us</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Our Mission
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Business opportunities are like buses, there’s always another one coming.
+            The idea of right and wrong is a construct, of course,
+             and it might feel overly simplistic to suggest that making the right 
+             choices will smooth the path forward. 
+             But the famous investor is merely noting with this business quote
+              that avoiding a wrong decision is as important as making the 
+              right one. 
+            Avoiding bad decisions is aided, of course, with
+            There’s no shortage of remarkable ideas, 
+            what’s missing is the will to
+        </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Our Team
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+                1st chapter of the Qur'an
+                Al-Fatiha, is the first surah of the Quran.
+                It consists of 7 
+                ayah which are a prayer for guidance and mercy.
+                Al-Fatiha is recited in Muslim obligatory and voluntary prayers, 
+                known as salah. Quranic ch…
+
+
+           </div>
+           </div>
+           </div>
+           </div>
+           </div>
+           
+           
+           {% endblock morecontent %}
+            <!-- Bootstrap JS -->
+    <script src="{{ url_for('static',filename='assets/dist/js/bootstrap.bundle.min.js')}}"></script>
+        </body>
+        </html>

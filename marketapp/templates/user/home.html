@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <title>Marketplace</title>
+
+    <style>
+     
+      #color{
+         color: blue;
+      }
+
+      .bg{
+        background-image: url(/static/images/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+      }
+
+      .overlay{
+        background-color: rgb(0,0,0,0.5);
+        min-height: 600px;
+        
+      }
+
+    
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Marketplace</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('static',filename='home.html')}}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sell</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+ <!-- Carousel -->
+ {% block morecontent %}
+      <div class="row">
+   
+        
+      </div>
+
+      <div class="container-fluid">
+        <div class="row bg">
+         <div class="col-md overlay">
+          <div></div>
+          <div></div>
+          <div class="my-5" >
+            <h1  style="text-align: center; color: white;" >Welcome to our marketplace!</h1>
+            <h5  style="text-align: center;color: white;">Discover amazing products and services</h5>
+          </div>
+           
+        
+        </div>
+        </div>
+
+        <div class="row">
+      
+          <div class="col-md" >
+            <a href=""><img src="/static/images/car.jpg" width="100%"></a>
+            <h5 class="mx-5 my-2">N1,000,000.00</h5>
+           <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+          </div>
+        
+          <div class="col-md" >
+            <img src="/static/images/boluss.jpg" width="100%">
+            <h5 class="mx-5 my-2">N3,000,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+      
+          </div>
+          <div class="col-md">
+            <img src="/static/images/resized.jpg" width="100%">
+            <h5 class="mx-5 my-2">N5,000,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            
+          </div>
+
+          <div class="col-md" >
+            <img src="/static/images/venzab.jpg" width="100%">
+            <h5 class="mx-5 my-2">N4,000,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+      
+          </div>
+        </div>
+
+        <div class="row">
+      
+         
+        
+          <div class="col-md" >
+            <img src="/static/images/resizegucci.jpg" width="100%">
+            <h5 class="mx-5 my-2">N50,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+          </div>
+          <div class="col-md">
+            <img src="/static/images/resizeman.jpg" width="100%">
+            <h5 class="mx-5 my-2">N70,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+          </div>
+          <div class="col-md">
+            <img src="/static/images/resizeshirt.jpg" width="100%">
+            <h5 class="mx-5 my-2">N65,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+          </div>
+          <div class="col-md">
+            <img src="/static/images/resizeclothe1.jpg" width="100%">
+            <h5 class="mx-5 my-2">N45,000.00</h5>
+            <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+          </div>
+        </div>
+   
+      
+          <div class="row">
+      
+            <div class="col-md">
+              <img src="/static/images/resizewatch.jpg" width="100%">
+              <h5 class="mx-5 my-2">N500,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+
+            </div>
+            <div class="col-md">
+              <img src="/static/images/resizeglass.jpg" width="100%">
+              <h5 class="mx-5 my-2">N200,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            </div>
+            <div class="col-md">
+              <img src="/static/images/resizeice.jpg" width="100%">
+              <h5 class="mx-5 my-2">N30,000,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            </div>
+            <div class="col-md">
+              <img src="/static/images/resizebag.jpg" width="100%">
+              <h5 class="mx-5 my-2">N30,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            </div>
+          </div>
+
+          <div class="row">
+      
+            <div class="col-md">
+              <img src="/static/images/resizeshoe.jpg" width="100%">
+              <h5 class="mx-5 my-2">N45,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+
+            </div>
+            <div class="col-md">
+              <img src="/static/images/resizeshoe1.jpg" width="100%">
+              <h5 class="mx-5 my-2">N115,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            </div>
+            <div class="col-md">
+              <img src="/static/images/resizeshoe2.jpg" width="100%">
+              <h5 class="mx-5 my-2">N200,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            </div>
+            <div class="col-md">
+              <img src="/static/images/resizeshoe3.jpg" width="100%">
+              <h5 class="mx-5 my-2">N300,000.00</h5>
+              <div class="col-md text-center"> <button class="btn btn-primary">Buy Now</button></div>
+            </div>
+          </div>
+          
+          </div>
+          {% endblock morecontent %}
+          <!-- Footer -->
+          <div class="row" style="background-color: black; padding-top: 10px; padding-bottom: 10px;">
+            <div class="col-md-3 mx-5">
+            <span><a href="" style="text-decoration: none;">Home</a></span> <br> <br>
+            <span><a href="" style="text-decoration: none">About Us</a></span> <br> <br>
+            <span><a href="" style="text-decoration: none">Contact Us</a></span> <br> <br>
+            <span><a href="" style="text-decoration: none">Get Vendors</a></span>
+
+            </div>
+
+            <div class="col-md-3" >
+              <span><a href="" style="text-decoration: none;">Home</a></span> <br> <br>
+              <span><a href="" style="text-decoration: none">About Us</a></span> <br> <br>
+              <span><a href="" style="text-decoration: none">Contact Us</a></span> <br> <br>
+              <span><a href="" style="text-decoration: none">Get Vendors</a></span>
+  
+              </div>
+
+              <div class="col-md-3">
+                <form class="form-control">
+                  <input class="form-control" id="color" type="name",placeholder=" enter fullname"><br>
+                  <input class="form-control" type="email",placeholder=" enter email"><br>
+                  <textarea class="form-control", placeholder="write us a message"></textarea> <br>
+                  <button class="btn btn-success">Send</button>
+                </form>
+    
+                </div>
+
+              
+
+          </div>
+    
+  
+   
+      <script src="{{ url_for('static',filename='assets/dist/js/bootstrap.bundle.min.js')}}"></script>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+{% extends "user/home.html"%}
+{% block morecontent %}
+<section class="bg-light p-5 text-center text-sm-start">
+<div class="container"> 
+   
+   <div class="d-sm-flex align-items-center justify-content-between ">
+         <div class="col-md-8 p-5"> 
+		     <h1 class="animate__animated animate__bounce"> START SHOPPING TODAY <br>
+          WITH <br>
+        <span class="text-primary"> DrinksCave.com </span>    </h1>	<br>
+           <br>
+			
+            <!-- Button trigger modal sign up-->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Sign Up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registration form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+	  <form>
+	  
+        <input type="text" placeholder=" Enter Fullname" class="form-control"> </input>
+		<input type="password" placeholder="Enter password" class="form-control"> </input>
+    <input type="text" placeholder="Enter delivery address" class="form-control"> </input>
+    <input type="numbaer" placeholder="Enter delivery phone number" class="form-control"> </input>
+    <input type="email" placeholder="Enter Email" class="form-control"> </input>
+    <input type="number" placeholder="enter phone number" class="form-control"> </input>
+		
+		</form>
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Terms & condition</button>
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+		 </div>
+		  
+		  <div class="col-md-4">
+		 <img  class="img-fluid w-100 d-sm-block" src="img\champgne.jpg" />
+              </div> 
+   </div>  
+</div>
+</section>
+<!-- end of my show case-->
+
+<!-- banner carousel-->
+
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img\cognac-color-banner.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img\cocktail.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img\champgne-banner.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+<!-- banner carousel-->
+	
+	
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script></script>
+  </body>
+</html>
